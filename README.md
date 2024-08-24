@@ -5,9 +5,13 @@ Este repositório contém um cenário de teste realizado pela ferramenta JMeter 
 # Informações sobre o Repositório  📌
 
 Blazedemo_teste.jmx: Arquivo JMX do cenário para aplicação do teste na ferramenta JMeter;
+
 Blazedemo_test.csv : Arquivo CSV ao qual contém os resultados gerados pela ferramenta;
+
 README.md : Informaçoes referente à finalidade do projeto;
+
 Relatório_Blazedemo_test.pdf : Relatório em arquivo PDF referente à análise realizada através do HMTL Report gerado;
+
 index.html : Arquivo do HTML report gerado
 
 
