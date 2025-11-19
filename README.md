@@ -1,44 +1,161 @@
-# Testes de Performance com JMeter  📎
-
-Este repositório contém um cenário de teste realizado pela ferramenta JMeter e em anexo está o HTML Report do caso de teste e também uma análise referente aos resultados. 
-
-# Informações sobre o Repositório  📌
-
-Blazedemo_teste.jmx: Arquivo JMX do cenário para aplicação do teste na ferramenta JMeter;
-
-Blazedemo_test.csv : Arquivo CSV ao qual contém os resultados gerados pela ferramenta;
-
-README.md : Informaçoes referente à finalidade do projeto;
-
-Relatório_Blazedemo_test.pdf : Relatório em arquivo PDF referente à análise realizada através do HMTL Report gerado;
-
-index.html : Arquivo do HTML report gerado
+# Testes de Performance com Apache JMeter – Projeto Blazedemo
 
 
-# Como Utilizar  ⚛️
+Este projeto apresenta um cenário simples e objetivo de testes de performance utilizando o Apache JMeter.  
+A ideia é demonstrar, de forma clara, como estruturo um plano de teste, executo o cenário, coleto os resultados e consolido a análise em um relatório técnico.
 
-   ## Pré-requisitos
-   
-Apache JMeter: Certifique-se de ter o Apache JMeter instalado em sua máquina. 
-
-O JMeter é um Java puro, este aplicativo deve ser executado corretamente em qualquer sistema que tenha compatibilidade Java implementação
-
-   ## Passos para Executar os Testes
-
-Após a instalação, abra o JMeter:
-
-   - Selecione o arquivo Blazedemo_teste.jmx no JMeter.
+O cenário foi executado sobre a aplicação Blazedemo, permitindo observar o comportamento da aplicação sob carga e entender como ela responde a múltiplas requisições simultâneas.
 
 
-   ## Configurar os Testes:
-
-   - Revise as informações contidas no arquivo JMX e realize o upload do arquivo CSV do caso de testes (o mesmo irá realizar a gravação de todas as informações geradas pela ferramenta!)
-   - Após a execução do teste
+---
 
 
-   ## Geração de relatório:
+## 1. Objetivo do Projeto
 
-   - Dento da pasta do caso de teste, criar uma pasta à parte "HTML Report"
-   - Localizar no menu "Tools" > Generate HTML Report > Results file (CSV - Selecionar o arquivo CSV, ao qual contém as informações gravadas) > user.properties file (pasta JMeter > bin > selecionar o arquivo "user.properties") > Output directory (selecionar a pasta criada "HTML Report") > Generate Report > Para visualização, clicar na pasta e selecionar o arquivo Index
+O propósito deste repositório é demonstrar:
 
- 
+- Como criar e organizar um plano de teste no JMeter.  
+- Como estruturar requisições, grupos de usuários e coleta de resultados.  
+- Como interpretar métricas de performance (tempo de resposta, throughput, erros).  
+- Como transformar os dados coletados em uma análise clara e objetiva.  
+- Como manter um fluxo organizado de execução, evidências e documentação técnica.
+
+Este projeto reflete a forma como trabalho diariamente com performance: clareza, organização e foco em comunicar o comportamento real da aplicação.
+
+
+---
+
+
+## 2. Por que este projeto é importante
+
+Mais do que executar um teste, este projeto demonstra práticas fundamentais de uma análise de performance profissional:
+
+### Comunicação simples e direta
+Cenário pensado para que qualquer pessoa — técnica ou não — consiga entender o que está sendo validado.
+
+### Estrutura organizada do plano de teste
+O arquivo `.jmx` apresenta um plano limpo, modular e fácil de manter.
+
+### Uso do CSV e HTML Report
+Os resultados são coletados em CSV e transformados em um relatório visual que facilita a leitura de métricas como percentis, tempo médio e taxa de erros.
+
+### Análise baseada em evidências
+O arquivo PDF apresenta a interpretação do comportamento observado, consolidando conclusões baseadas nos dados coletados.
+
+### Demonstração prática de competências
+O projeto reúne os elementos essenciais de uma análise profissional: construção do cenário, execução, leitura e documentação das métricas.
+
+
+---
+
+
+## 3. Estrutura do Repositório
+
+```plaintext
+
+Jmeter/
+├── Blazedemo_teste.jmx # Plano de teste criado no JMeter
+├── Blazedemo_test.csv # Resultados brutos da execução
+├── index.html # Relatório HTML gerado com o CSV
+├── Relatório_Blazedemo_test.pdf # Análise técnica dos resultados
+└── README.md # Documentação do projeto
+```
+
+
+---
+
+
+## 4. Tecnologias Utilizadas
+
+- Apache JMeter  
+- Java (necessário para rodar o JMeter)  
+- CSV  
+- HTML Report  
+- PDF para relatório técnico  
+- Aplicação alvo: Blazedemo
+
+---
+
+
+## 5. Como Executar
+
+### Pré-requisitos
+
+- Apache JMeter instalado  
+- Java instalado na máquina
+
+### Passo a passo
+
+1. Abra o Apache JMeter.  
+2. Carregue o arquivo:
+
+Blazedemo_teste.jmx
+
+
+3. Execute o teste clicando em **Start**.  
+4. O arquivo de resultados será gerado como:
+
+
+
+Blazedemo_test.csv
+
+
+---
+
+
+## 6. Gerando o Relatório HTML
+
+1. Crie uma pasta chamada:
+
+HTML Report
+
+
+2. No JMeter, vá em:
+
+Tools > Generate HTML Report
+
+
+3. Preencha os campos:
+
+- **Results file** → selecione o arquivo `.csv`  
+- **User properties file** → selecione `user.properties` da pasta `/bin` do JMeter  
+- **Output directory** → selecione a pasta `HTML Report`
+
+
+4. Depois, abra o arquivo:
+
+index.html
+
+
+Esse relatório exibe gráficos, percentis, taxas de erro e detalhes importantes sobre o comportamento da aplicação.
+
+
+---
+
+
+## 7. Relatório de Análise (PDF)
+
+
+O arquivo:
+
+Relatório_Blazedemo_test.pdf
+
+
+inclui:
+- Descrição do cenário  
+- Principais métricas coletadas  
+- Interpretação dos gráficos  
+- Conclusões sobre a performance da aplicação  
+
+---
+
+
+## 8. Considerações Finais
+
+Este projeto demonstra de forma prática como estruturo e analiso testes de performance.  
+Ele evidencia organização, clareza, análise orientada a dados e documentação técnica objetiva.
+
+Também pode servir como base para cenários mais complexos ou como referência da minha abordagem ao trabalhar com performance.
+
+
+---
